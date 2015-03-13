@@ -64,7 +64,7 @@ ggplot(stpsxtime, aes(x=Interval, y=steps)) + geom_line(colour="blue")
 ```r
 stpsxtime_max<-summarize(group_by(dt,interval),max(steps))
 colnames(stpsxtime_max)=c("interval","steps")
-ggplot(stpsxtime_max, aes(x=interval, y=steps)) + geom_line(colour="green")
+ggplot(stpsxtime_max, aes(x=interval, y=steps)) + geom_line(colour="darkgreen")
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-6-1.png) 
@@ -145,7 +145,7 @@ colnames(stpsxtime)[3]="steps"
 ```
 
 
-2. Make a panel plot containing a time series plot (i.e. `type = "l"`) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). The plot should look something like the following, which was created using 
+2. Make a panel plot containing a time series plot (i.e. `type = "l"`) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). The plot should look something like the following, which was created using **simulated data**
 
 
 
